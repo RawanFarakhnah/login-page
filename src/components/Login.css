@@ -1,0 +1,21 @@
+.background-image {
+    position: fixed; /* Ensure it stays in place */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/src/assets/login-background.jpg'); /* Your image URL */
+    background-size: cover; /* Cover the entire area */
+    background-position: center; /* Center the image */
+    filter: blur(8px); /* Adjust the blur level */
+    z-index: -1; /* Send it to the back */
+  }
+  
+  /* Optional: Adjust the opacity of the container to enhance the blur effect */
+  .content-container {
+    position: relative;
+    background: rgba(255, 255, 255, 0.8); /* White background with opacity */
+    border-radius: 1rem; /* Rounded corners */
+    overflow: hidden; /* Prevent content overflow */
+    z-index: 1; /* Ensure content is above the background */
+  }
